@@ -20,10 +20,12 @@ body{
 
 :root{
     --MR400--: 'Montserrat-Regular';
+    --MR600--: 'Montserrat-SemiBold';
     --MB700--: 'Montserrat-Bold';
+    --MB800--: 'Montserrat-ExtraBold'
 }
 
-.header__inner{
+.header{
     display: flex;
     flex-direction: column;
 }
@@ -82,33 +84,33 @@ body{
     gap: 185px;
 }
 
-.header__titles{
+.header__title{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.header__titles h1{
+.header__title{
     font-family: var(--MB700--);
-    font-size: 48px;
+    font-size: 47px;
     color: #000000;
 }
 
-.header__titles div{
+.header__title span{
     padding: 8px 36px;   
     border-radius: 15px;
     border: none; 
 }
 
-.header__titles div:nth-child(1){
+.header__title span:nth-child(1){
     background: #65D0FF;
 }
 
-.header__titles div:nth-child(2){
+.header__title span:nth-child(2){
     background: #FFDE59;
 }
 
-.header__titles div:nth-child(3){
+.header__title span:nth-child(3){
     background: #BF85FF;
 }
 
@@ -130,7 +132,7 @@ body{
     width: 70%;
 }
 
-.header__start h1{
+.header__start span{
     font-size: 48px;
     font-family: var(--MB700--);
     color: #EBEBEB;
@@ -224,4 +226,217 @@ body{
     color: #ffffff;
     font-family: var(--MB700--);
     font-size: 20px;
+}
+
+.students__inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 162px;
+}
+
+.students__about{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.students__info{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 65px;
+    background-color: #232323;
+    border-radius: 40px;
+}
+
+.students__info button{
+    color: #EBEBEB;
+    background: inherit;
+    border: none;
+    font-family: var(--MR600--);
+    font-size: 29px; 
+}
+
+.students__info p{
+    font-family: var(--MR400--);
+    font-weight: 400;
+    font-size: 21px;
+    color: #EBEBEB;
+    margin: 27px 0 57px 0;
+}
+
+.students__scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.students__scroll div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.students__scroll span{
+    padding: 8px 17px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 2px #FFFFFF4D inset;
+    font-size: 30px;
+    font-family: var(--MR400--);
+    color: #EBEBEB  ;
+}
+
+.students__bg div:first-child{
+    height: 63%;
+    width: 30%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #FFDE59;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.students__bg div:last-child{
+    height: 63%;
+    width: 30%;
+    position: absolute;
+    right: 52%;
+    top: 20px;
+    background-color: #65D0FF;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+
+.students__img{
+    display: flex;
+    align-items: center;
+    height: 460px;
+}
+
+.students__img img{
+    max-width: 580px;
+    width: 100%;
+}
+
+.registration{
+    background-color: #232323;
+    padding: 111px 0 173px 0;
+}
+
+.registration__inner{
+    display: flex;
+    gap: 50px;
+}
+
+.registration__prompt{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 44%;
+}
+
+.prompt__btn{
+    background-color: #353535;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: var(--MB700--);
+    padding: 20px ;
+    text-align: left;
+}
+
+.prompt__btn img{
+    width: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.registration__prompt form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 41px 37px 45px 37px;
+    background-color: #8C8C8C99;
+    border-radius: 20px;
+}
+
+.registration__prompt input{
+    padding: 20px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.registration__prompt input::placeholder{
+    font-size: 18px;
+    font-family: var(--MR400--);
+    font-weight: 300;
+}
+
+.form__btns{
+    display: flex;
+    gap: 7px;
+}
+
+.form__btns button{
+    padding: 10px 20px;
+    background-color: #232323;
+    border-radius: 10px;
+    border: none;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--MB800--);
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.registration__money{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    gap: 50px;
+    text-align: right;
+    position: relative;
+}
+
+.registration__money button{
+    background-color: #DA4959;
+    border-radius: 30px;
+    font-size: 70px;
+    font-family: var(--MB700--);
+    color: #EBEBEB;
+    width: 70%;
+    padding: 25px 0;
+    text-align: center;
+    border: none;
+}
+
+.registration__money p{
+    color: #EBEBEB;
+    font-size: 50px;
+    font-family: var(--MR400--);
+    font-weight: 200;
+}
+
+.registration__money img:first-of-type{
+    transform: translate(-120px, 300px);
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.registration__money img:last-of-type{
+    transform: translate(80px, 490px);
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
